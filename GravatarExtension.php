@@ -8,7 +8,7 @@ class GravatarExtension extends \Twig_Extension
     public function getFilters()
     {
         return array(
-            'gravatar' => new \Twig_SimpleFilter('gravitar', [$this, 'gravatarFilter']),
+            'gravatar' => new \Twig_SimpleFilter('gravatar', [$this, 'gravatarFilter']),
         );
     }
 
