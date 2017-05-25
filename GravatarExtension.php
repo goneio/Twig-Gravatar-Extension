@@ -1,6 +1,6 @@
 <?php
 
-namespace Gone\Twig
+namespace Gone\Twig;
 
 class GravatarExtension extends \Twig_Extension
 {
