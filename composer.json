@@ -1,0 +1,19 @@
+{
+    "name": "gone.io/twig-extension-gravatar",
+    "type": "library",
+    "require": {
+        "twig/extensions": "^1.3"
+    },
+    "licence": "GPL-3.0+",
+    "authors": [
+        {
+            "name": "Matthew Baggett",
+            "email": "matthew@baggett.me"
+        }
+    ],
+    "autoload"   : {
+        "psr-4": {
+            "Gone\\Twig\\": "."
+        }
+    }
+}
