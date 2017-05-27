@@ -12,30 +12,14 @@ class GravatarExtension extends \Twig_Extension
         );
     }
 
-    public function gravatarFilter($email, $size = null, $default = null)
+    public function gravatarFilter($email, $size = null)
     {
-        $defaults = array(
-            '404',
-            'mm',
-            'identicon',
-            'monsterid',
-            'wavatar',
-            'retro',
-            'blank'
-        );
-
         $hash = md5($email);
         $url = 'https://www.gravatar.com/avatar/'.$hash;
 
         // Size
-        if (!is_null($size)){
+        if (!is_null($size)) {
             $url .= "?s=$size";
-        }
-
-        // Default
-        if (!is_null($default)){
-            $url .= is_null($size) ? '?' : '&';
-            $url .= in_array($default, $defaults) ? $default : urlencode($default);
         }
 
         return $url;
