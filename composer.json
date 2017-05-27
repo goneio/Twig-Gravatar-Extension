@@ -2,6 +2,7 @@
     "name": "gone.io/twig-extension-gravatar",
     "type": "library",
     "require": {
+        "php": "^7.0",
         "twig/extensions": "^1.3"
     },
     "require-dev": {
