@@ -1,5 +1,5 @@
 {
-    "name": "gone.io/twig-extension-gravatar",
+    "name": "matthewbaggett/twig-extension-gravatar",
     "description": "Add support for transforming an email address into a gravatar image URL in a simple filter.",
     "type": "library",
     "require": {
