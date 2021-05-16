@@ -1,9 +1,9 @@
 <?php
-namespace Gone\Tests;
+namespace MatthewBaggett\Tests;
 
-use Gone\Twig\GravatarExtension;
-use Gone\Twig\TransformExtension;
-use Gone\Twig\TransformExtensionException;
+use MatthewBaggett\Twig\GravatarExtension;
+use MatthewBaggett\Twig\TransformExtension;
+use MatthewBaggett\Twig\TransformExtensionException;
 use Twig_Error_Syntax;
 use PHPUnit\Framework\TestCase;
 
