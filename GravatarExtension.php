@@ -2,13 +2,16 @@
 
 namespace MatthewBaggett\Twig;
 
-class GravatarExtension extends \Twig_Extension
+use Twig\Extension\AbstractExtension;
+use Twig\TwigFilter;
+
+class GravatarExtension extends AbstractExtension
 {
 
     public function getFilters()
     {
         return array(
-            'gravatar' => new \Twig_SimpleFilter('gravatar', [$this, 'gravatarFilter']),
+            'gravatar' => new TwigFilter('gravatar', [$this, 'gravatarFilter']),
         );
     }
 
